@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/styles.css">
+        <link href="https://db.onlinewebfonts.com/c/25a98d062de0251050939228b97b4a06?family=Galano+Classic+Bold" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+   
+        <div class="nav">
+        <nav class="bg-gray-800" style="background-color: #f6f6eb;">
+            <div class="navbar mx-auto max-w-9xl px-2 sm:px-6 lg:px-8">
+              <div class="navs relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                  <!-- Mobile menu button-->
+                  <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="absolute -inset-0.5"></span>
+                    <span class="sr-only">Open main menu</span>
+                    <!--
+                      Icon when menu is closed.
+          
+                      Menu open: "hidden", Menu closed: "block"
+                    -->
+                    <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <!--
+                      Icon when menu is open.
+          
+                      Menu open: "block", Menu closed: "hidden"
+                    -->
+                    <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="navigation flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                  <div class="flex flex-shrink-0 items-center">
+                    <svg id="logo" style="fill: #381fd1;" width="32" height="32" viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg" aria-label="Home" element-id="216"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM15.4225 22.7124V25.607C18.1716 25.7753 20.8606 24.7551 22.806 22.8056C26.5647 19.0469 26.5647 12.9531 22.806 9.19477C22.4644 8.85297 22.0977 8.53716 21.709 8.25L19.6336 10.3252L10.3245 19.6332C8.61894 16.9674 8.99804 13.4741 11.2358 11.2362C12.6405 9.8287 14.5963 9.11525 16.5775 9.28762V6.39295C13.8284 6.22472 11.1394 7.24504 9.19403 9.19458C5.43532 12.9532 5.43532 19.047 9.19403 22.8054C9.53564 23.1472 9.90231 23.463 10.291 23.7501L12.3663 21.675L21.6754 12.3668C23.381 15.0325 23.0019 18.5259 20.7641 20.7638C19.3594 22.1713 17.4036 22.8847 15.4225 22.7124Z"  element-id="215"></path>
+                    </svg>
+                  </div>
+                  <div class="nav-menu hidden sm:ml-6 sm:block">
+                    <div class="nav-links" id="nav-links">
+                      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                      <button href="#" class="text-gray-300 hover:bg-gray-700" aria-current="page" id="nav-link" style="color: #381fd1; font-weight: bold;">USE CASES <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1" element-id="222"><path d="M6.79669 8.0716C6.41769 8.6428 5.58231 8.6428 5.20331 8.0716L3.16242 4.9957C2.73821 4.35637 3.19436 3.5 3.95911 3.5L8.04089 3.5C8.80564 3.5 9.26179 4.35637 8.83758 4.9957L6.79669 8.0716Z" fill="currentColor" element-id="221"></path></svg></button>
+                      <button href="#" class="text-gray-300 hover:bg-gray-700" id="nav-link" style="color: #381fd1; font-weight: bold; font-family: FSP DEMO - Biotif Bold">PRICING</button>
+                      <button href="#" class="text-gray-300 hover:bg-gray-700" id="nav-link" style="color: #381fd1; font-weight: bold;">SUPPORT</button>
+                      <button href="#" class="text-gray-300 hover:bg-gray-700" id="nav-link" style="color: #381fd1; font-weight: bold;">RESOURCES<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-1" element-id="222"><path d="M6.79669 8.0716C6.41769 8.6428 5.58231 8.6428 5.20331 8.0716L3.16242 4.9957C2.73821 4.35637 3.19436 3.5 3.95911 3.5L8.04089 3.5C8.80564 3.5 9.26179 4.35637 8.83758 4.9957L6.79669 8.0716Z" fill="currentColor" element-id="221"></path></svg></button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="navbar2 flex items-center space-x-4 text-lg font-semibold tracking-tight">
+                    <button id="button1"class="px-6 py-2" >LOG IN</button>
+                    <button id="button2" class="px-6 py-2 text-white transition duration-500 ease-out rounded-lg hover:bg-blue-800 hover:ease-in hover:underline">START FREE TRIAL</button>
+                </div>
+          
+                  <!-- Profile dropdown -->
+                  
+          
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="sm:hidden" id="mobile-menu">
+              <div class="space-y-1 px-2 pb-3 pt-2">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+    <body>
+
+      <main>
+        <section>
+          <div class="landing-block">
+            <div class="library-main">
+              <div>
+                <div class="side-nav flex h-screen flex-col justify-between  bg-white">
+                  <div class="px-4 py-6">
+                    <div class="search-label"><label for="search-bar" id="label">Search Library</label></div>
+                    <input type="search" class="search-bar">
+          
+                
+                    <ul class="mt-6 space-y-1">
+                      <li>
+                        <a
+                          href="#"
+                          class="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
+                        >
+                          Home
+                        </a>
+                      </li>
+                
+                      <li>
+                        <a
+                          href="#"
+                          class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                        >
+                          Collections
+                        </a>
+                      </li>
+                
+                      <li>
+                        <details class="group [&_summary::-webkit-details-marker]:hidden">
+                          <summary
+                            class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                          >
+                            <span class="text-sm font-medium"> Categories </span>
+                
+                            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"
+                                />
+                              </svg>
+                            </span>
+                          </summary>
+                
+                          <ul class="mt-2 space-y-1 px-4">
+                            <li>
+                              <a
+                                href="#"
+                                class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                              >
+                                Details
+                              </a>
+                            </li>
+                
+                            <li>
+                              <a
+                                href="#"
+                                class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                              >
+                                Security
+                              </a>
+                            </li>
+                
+                            <li>
+                              <form action="#">
+                                <button
+                                  type="submit"
+                                  class="w-full rounded-lg px-4 py-2 text-sm font-medium text-gray-500 [text-align:_inherit] hover:bg-gray-100 hover:text-gray-700"
+                                >
+                                  Logout
+                                </button>
+                              </form>
+                            </li>
+                          </ul>
+                        </details>
+                      </li>
+                    </ul>
+
+                    <div class="side-2 inset-x-0 bottom-0 border-t border-gray-100">
+                      <h4>Contribute to Stark</h4>
+                      <p>Got any accessibility resources<br>or news?</p>
+                      <a href="">Submit a Resource</a>
+                    </div>
+                  </div>
+
+
+                
+                  
+                </div>
+              </div>
+              <div class="main">
+                <div class="top-main">
+                  <h2>New in the Library</h2>
+                  <a href="">VIEW ALL</a>
+                </div>
+                <p>Newly added accessibility resources, guides, and more.</p>
+                <div class="flex-container">
+                  <div class="row">
+                    <div class="tile">
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg" alt="" id="img-box">
+                      <p>RESOURCES</p>
+                      <h4>Inclusive <br>Publishing</h4>
+                    </div>
+                    <div class="tile">
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345933/Screenshot_2023_03_20_at_3_58_45_PM_b615f86e7e.png" alt="" id="img-box">
+                      <p>RESOURCES</p>
+                      <h4>The APLN <br>(Accessible <br> Publishing Learning Network)</h4>
+                    </div>
+                    <div class="tile">
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg" alt="" id="img-box">
+                      <p>RESOURCES</p>
+                      <h4>Making Accessible <br> Books</h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="tile">
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg" alt="" id="img-box">
+                      <p>RESOURCES</p>
+                      <h4>The DAISY <br>Consortium’s <br> Accessible Publishing Knowledge Base</h4>
+                    </div>
+                    <div class="tile">
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1658845042/language_please_logo_d4b822280f.png" alt="" id="img-box">
+                      <p>RESOURCES</p>
+                      <h4>Language, Please: <br> Style Guide & <br> Resources for journalists and storyteller</h4>
+                    </div>
+                    <div class="tile">
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653070254/library_author_google_7723cb132a.png" alt="" id="img-box">
+                      <p>BLOGS & ARTICLES</p>
+                      <h4>4 steps to more <br> inclusive, precise <br> language</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="top-main">
+                  <h2>Featured Collections</h2>
+                  <a href="">VIEW ALL</a>
+                </div>
+                <p>Handpicked and curated collections around accessibility.</p>
+                <div class="flex-container" id="container2">
+                  <div class="row">
+                    <div class="tile1">
+                      <h4>Disability <br> Employment</h4>
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653845742/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png" id="img1" alt="">
+                    </div>
+                    <div class="tile2">
+                      <h4>Making <br>Accessible Color <br>Combos</h4>
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_making_accessible_color_combos_42c8d90a99.png" id="img2" alt="">
+                    </div>
+                    <div class="tile3">
+                      <h4>Tips and Tricks <br> for Inclusive <br> Social Media</h4>
+                      <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_Inclusive_Social_Media_b9669e6d39.png" id="img2" alt="">
+                    </div>
+                  </div>
+                  
+                
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+      
+
+      </main>
+
+        
+        
+        <script src="" async defer></script>
+    </body>
+
+    <footer>
+      <div class="footer">
+        <div class="flex-container" id="container3">
+          <div class="row">
+            <div class="footer-tile">
+              <p id="footer-title">Use Cases</p>
+              <p>For Designers</p>
+              <p>For Developers</p>
+              <p>For Product Managers</p>
+              <p>For Compliance Managers</p>
+            </div>
+            <div class="footer-tile">
+              <p id="footer-title">Resources</p>
+              <p>Blog</p>
+              <p>Library</p>
+              <p>Release Notes</p>
+              <p>Slack Community</p>
+            </div>
+            <div class="footer-tile">
+              <p id="footer-title">Help</p>
+              <p>My Account</p>
+              <p>Support Docs</p>
+              <p>Contact Us</p>
+              <p>Feature Requests</p>
+            </div>
+            <div class="footer-tile">
+              <p id="footer-title">Company</p>
+              <p>Stark Framework</p>
+              <p>Privacy Policy</p>
+              <p>Terms of Service</p>
+              <p>Code of Conduct</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="footer-tile">
+              <p id="footer-title">Security</p>
+              <p>Security Overview</p>
+              <p>Cookie Policy</p>
+              <p>GDPR</p>
+              <p>Status</p>
+            </div>
+            <div class="footer-tile">
+              <p id="footer-title">Design intergrations</p>
+              <p>Stark for Figma</p>
+              <p>Stark for FigJam</p>
+              <p>Stark for Sketch</p>
+              <p>Stark for Adobe XD</p>
+            </div>
+            <div class="footer-tile">
+              <p id="footer-title">Developer intergrations</p>
+              <p>Stark for Chrome</p>
+              <p>Stark for Firefox</p>
+              <p>Stark for Edge</p>
+              <p>Stark for Safari</p>
+              <p>Stark for Arc</p>
+              <p>Stark for Brave</p>
+            </div>
+            <div class="footer-tile">
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          </div>
+        
+          <div class="bottom-footer">
+            <div class="socials">
+              <img src="https://images.getstark.co/marketing/social-media/twitter.png" alt="" id="social-img">
+              <img src="https://images.getstark.co/marketing/social-media/instagram.png" alt="" id="social-img">
+              <img src="https://images.getstark.co/marketing/social-media/slack.png" alt="" id="social-img">
+              <img src="https://images.getstark.co/marketing/social-media/share-linkedin.webp" alt="" id="social-img">
+              <img src="https://images.getstark.co/marketing/social-media/youtube.png" alt="" id="social-img">
+            </div>
+            <p>Made remotely with love by Stark Lab, Inc. Copyright 2023</p>
+          </div>
+
+        </div>
+      
+    </footer>
+</html>
